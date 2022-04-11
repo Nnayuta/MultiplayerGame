@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro jogo multiplayer</title>
+    <link rel="stylesheet" href="./src/css/client.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div>
+        <div id="menu">
+            <button id="start-game">START</button>
+            <div id="divTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listplayers">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="game">
+        </div>
+    </div>
+    <script type="module" src="./src/scripts/client.js"></script>
+</body>
+
+</html>
